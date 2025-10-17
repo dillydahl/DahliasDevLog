@@ -1,0 +1,100 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    color: brown;
+    background-color: beige;
+
+}
+
+.hero{
+    background-color: rgb(216, 168, 108);
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+.navbar{
+    background-color: rgba(193, 126, 38, 0.822);
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color;
+}
+
+.navbar a:hover{
+    background-color: blanchedalmond;
+}
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(193, 126, 38, 0.822);
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color: antiquewhite;
+    padding: 2rem;
+    width: 300px;
+    min-height: 400px;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: 3px solid rgb(176, 117, 40);
+}
+
+.sidebar h2{
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.main-content{
+    flex: 1;
+    padding: 2rem;
+
+}
+
+.main-content h2{
+    color: rgb(234, 162, 80);
+    margin-bottom: 1.8rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid beige;} 
+
+.button{
+    width: 100px;
+    height: 100px;
+    border-radius:25%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: .5px solid rgb(176, 117, 40);
+    background-color: rgb(190, 144, 75);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
