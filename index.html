@@ -43,6 +43,39 @@
 
           <h3>Dahlia Nunn</h3>
           <p>Blah blah blah blah</p>
+
+          <!-- Interactive Flower -->
+          <section class="flower-section" aria-label="Interactive flower">
+            <p class="visually-hidden" id="flower-desc">Use mouse or keyboard. Focus a petal and press Enter/Space to toggle it. Click center to spin. Buttons randomize or reset.</p>
+            <div class="flower-wrapper">
+              <svg class="interactive-flower" viewBox="0 0 200 200" width="220" height="220" role="img" aria-labelledby="flower-desc">
+                <title>Interactive stylized flower</title>
+                <g id="flower-root" transform="translate(100,100)">
+                  <g class="petals" id="petals">
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff6fa3" transform="rotate(0)" data-index="1" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff88b9" transform="rotate(45)" data-index="2" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff6fa3" transform="rotate(90)" data-index="3" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff88b9" transform="rotate(135)" data-index="4" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff6fa3" transform="rotate(180)" data-index="5" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff88b9" transform="rotate(225)" data-index="6" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff6fa3" transform="rotate(270)" data-index="7" tabindex="0" role="button" aria-pressed="false" />
+                    <ellipse class="petal" rx="22" ry="54" fill="#ff88b9" transform="rotate(315)" data-index="8" tabindex="0" role="button" aria-pressed="false" />
+                  </g>
+
+                  <g id="center" tabindex="0" role="button" aria-label="Spin flower" aria-pressed="false">
+                    <circle r="20" fill="#ffd166" />
+                    <circle r="7" fill="#fff7d6" transform="translate(6,-6)" opacity="0.7"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="flower-controls" aria-hidden="false">
+              <button id="randomize-colors" class="button">Randomize colors</button>
+              <button id="reset-flower" class="button">Reset</button>
+            </div>
+          </section>
+
         </div>
       </main>
       <button class="button">Click Me</button>
@@ -50,4 +83,10 @@
 
     <script src="script.js"></script>
   </body>
+
+
+
+
+  
 </html>
+
