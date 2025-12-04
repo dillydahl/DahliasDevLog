@@ -54,6 +54,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-
-
